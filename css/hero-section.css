@@ -1,0 +1,192 @@
+main {
+  padding: 0.5rem 4rem;
+}
+
+.hero-section {
+  margin-top: -5vh;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-section-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.hover-text-container {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+}
+
+.hover-text-container > h6 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-right: 0.4rem;
+}
+
+.hover-text-container > svg {
+  height: 1.5rem;
+}
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.hero-text-container::after {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.371);
+  transform: translateY(-2rem);
+  filter: blur(2rem);
+  height: 60vh;
+  width: 80vh;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.hero-text-container > h1 {
+  font-size: 10rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  color: #111111;
+}
+
+.hero-text-container > h1:nth-child(2) > span > h6 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.down-arrow-container {
+  align-self: center;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -10rem;
+}
+
+.down-arrow {
+  position: relative;
+  align-self: center;
+  height: 6rem;
+  width: 6rem;
+  padding: 1rem;
+  border-radius: 50%;
+  border: 3px solid #000;
+  text-align: center;
+}
+
+.down-arrow-container > svg {
+  height: 100%;
+}
+
+.good-design-text-container {
+  align-self: flex-end;
+  justify-self: flex-start;
+}
+
+.good-design-text-container > h6 {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-right: 0.4rem;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .hero-section-container {
+    flex-direction: column;
+  }
+
+  .hero-text-container > h1 {
+    font-size: 8rem;
+  }
+
+  .good-design-text-container {
+    margin-top: 1rem;
+    margin-right: 16px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  
+  .hero-text-container > h1 {
+    font-size: 6rem;
+  }
+
+  .good-design-text-container {
+    margin-top: 1rem;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  main {
+    padding: 0.5rem 1rem;
+  }
+  .hero-section {
+    margin-top: -10vh;
+  }
+  .hover-text-container {
+    order: 3;
+    display: none;
+  }
+
+  .hero-text-container {
+    order: 2;
+  }
+  .hero-text-container > h1 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  
+  .hero-text-container > h1:nth-child(2) > span > h6 {
+    bottom: -2rem;
+  }
+
+  .good-design-text-container {
+    order:1;
+    align-self: flex-start;
+    margin-bottom: 1rem;
+  }
+
+  .down-arrow-container {
+    align-self: center;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -14rem;
+  }
+  
+}
+
+@media screen and (max-width: 376px){
+  .hero-text-container > h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
+}

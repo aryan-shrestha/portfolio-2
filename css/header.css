@@ -1,0 +1,60 @@
+header {
+  /* background-color: rgb(255, 255, 255); */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  cursor: default;
+  z-index: 999;
+}
+
+.header-container {
+  padding: 0.5rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-container > h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.status > h4,
+.current-time > h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.current-time {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-weight: 300;
+}
+
+.current-time > h4 {
+  font-weight: 300;
+}
+
+.status {
+  height: 1.3rem;
+  overflow: hidden;
+  color: #000;
+}
+
+.status > h4 {
+  font-weight: 500;
+  transition: all ease-out 0.2s;
+}
+
+.status:hover > h4 {
+  transform: translateY(-1.2rem);
+}
+
+
+@media screen and (max-width: 426px) {
+  .header-container {
+    padding: 0.5rem 1rem;
+  }
+  
+}

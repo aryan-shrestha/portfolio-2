@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Teko');
+
+        * {
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        .cards {
+            width: 100%;
+            height: 50vh;
+            position: relative;
+        }
+
+        .card {
+            padding: 2em;
+            color: white;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #1565C0;
+            text-transform: uppercase;
+            font-size: 10vw;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Teko', sans-serif;
+            background: #BBDEFB;
+        }
+
+        .card,
+        .header,
+        .spacer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            font-size: 50px;
+            text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.3);
+        }
+
+        .header {
+            width: 100%;
+            height: 150px;
+            background: #060606;
+            color: yellow;
+            font-size: clamp(30px, 10vw, 60px);
+            line-height: 1;
+        }
+
+        .header span {
+            font-size: clamp(30px, 6vw, 40px);
+            color: #76FF03;
+        }
+
+        .card:nth-child(odd) {
+            background: #303F9F;
+        }
+
+        .spacer {
+            font-size: 50px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="spacer" style="height:50vh;">Scroll Down</div>
+    <div class="wrapper">
+        <div class="header">GSAP SCROLLTRIGGER<br> <span>FREE DEMO</span></div>
+        <div class="cards">
+
+            <div class="card">stacking</div>
+            <div class="card">cards</div>
+            <div class="card">for</div>
+            <div class="card">you</div>
+            <div class="card">to</div>
+            <div class="card">explore</div>
+            <div class="card">and</div>
+            <div class="card">use</div>
+        </div>
+    </div>
+    <div class="spacer" style="height:100vh; text-align:center;">SEE VIDEO DESCRIPTION FOR DEMO LINK</div>
+
+    <div class="brand" style="background:black; text-align:center;"><a
+            href="https://www.creativecodingclub.com/bundles/creative-coding-club?src=cdp3droll" target="_blank"><img
+                src="https://assets.codepen.io/32887/logo-ill.svg" width="300" alt="" /></a></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.23/bundled/lenis.min.js"></script>
+    <script src="./js/scrollAnimation.js"></script>
+</body>
+
+</html>
