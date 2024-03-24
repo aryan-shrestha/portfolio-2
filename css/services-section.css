@@ -1,7 +1,34 @@
 .services-section {
     margin-top: 12vh;
+    padding: 0.5rem 4rem;
    }
+   
+   .service-header {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6rem;
+  }
   
+  .service-header > h1 {
+    font-size: 6.5rem;
+    font-weight: 700;
+    flex: 1;
+    text-transform: uppercase;
+    color: #ffffffe8;
+
+  }
+  
+  .service-header > p {
+    flex: 1;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 3rem;
+    color: #ffffffe8;
+  }
   .services-cards {
     width: 100%;
     position: relative;
@@ -15,9 +42,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #000;
+    border-top: 2px solid #ffffff2f;
     gap: 6rem;
-    background-color: #EFEFEF;
+    background-color: #000;
   }
   
   .services-card-header {
@@ -34,6 +61,7 @@
     font-weight: 800;
     text-transform: uppercase;
     letter-spacing: 2px;
+    color: #ffffffe8;
   }
   
   
@@ -43,11 +71,12 @@
     margin-top: 1.5rem;
     line-height: 2.5rem;
     letter-spacing: 2px;
-    color: #000000b9;
+    color: #ffffffbb;
   }
   
   .services-card-body > ul {
     list-style-type: none;
+    color: #ffffffbb;
   }
   
   .services-card-body > ul > li {
@@ -56,26 +85,3 @@
     font-weight: 600;
   }
   
-  .service-header {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 6rem;
-  }
-  
-  .service-header > h1 {
-    font-size: 6.5rem;
-    font-weight: 700;
-    flex: 1;
-    text-transform: uppercase;
-  }
-  
-  .service-header > p {
-    flex: 1;
-    font-size: 1.5rem;
-    font-weight: 500;
-    letter-spacing: 2px;
-    line-height: 3rem;
-  }

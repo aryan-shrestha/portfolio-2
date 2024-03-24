@@ -23,7 +23,7 @@ const downArrowAnimation = () => {
 downArrowAnimation();
 
 const animatedGrain = () => {
-  grained('#grainy-background', {
+  grained('#hero-section', {
     "animate": true,
     "patternWidth": 200,
     "patternHeight": 100,

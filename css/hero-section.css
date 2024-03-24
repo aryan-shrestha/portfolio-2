@@ -1,8 +1,5 @@
-main {
-  padding: 0.5rem 4rem;
-}
-
 .hero-section {
+  padding: 0.5rem 4rem;
   margin-top: -5vh;
   min-height: 100vh;
   display: flex;
@@ -26,14 +23,14 @@ main {
   height: 2rem;
 }
 
-.hover-text-container > h6 {
+.hover-text-container>h6 {
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: 400;
   margin-right: 0.4rem;
 }
 
-.hover-text-container > svg {
+.hover-text-container>svg {
   height: 1.5rem;
 }
 
@@ -56,7 +53,7 @@ main {
   border-radius: 50%;
 }
 
-.hero-text-container > h1 {
+.hero-text-container>h1 {
   font-size: 10rem;
   text-transform: uppercase;
   font-weight: 600;
@@ -64,7 +61,7 @@ main {
   color: #111111;
 }
 
-.hero-text-container > h1:nth-child(2) > span > h6 {
+.hero-text-container>h1:nth-child(2)>span>h6 {
   font-size: 0.8rem;
   font-weight: 500;
   position: absolute;
@@ -95,7 +92,7 @@ main {
   text-align: center;
 }
 
-.down-arrow-container > svg {
+.down-arrow-container>svg {
   height: 100%;
 }
 
@@ -104,7 +101,7 @@ main {
   justify-self: flex-start;
 }
 
-.good-design-text-container > h6 {
+.good-design-text-container>h6 {
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: 400;
@@ -118,7 +115,7 @@ main {
     flex-direction: column;
   }
 
-  .hero-text-container > h1 {
+  .hero-text-container>h1 {
     font-size: 8rem;
   }
 
@@ -128,9 +125,9 @@ main {
   }
 }
 
-@media screen and (max-width: 768px){
-  
-  .hero-text-container > h1 {
+@media screen and (max-width: 768px) {
+
+  .hero-text-container>h1 {
     font-size: 6rem;
   }
 
@@ -144,9 +141,11 @@ main {
   main {
     padding: 0.5rem 1rem;
   }
+
   .hero-section {
     margin-top: -10vh;
   }
+
   .hover-text-container {
     order: 3;
     display: none;
@@ -155,17 +154,18 @@ main {
   .hero-text-container {
     order: 2;
   }
-  .hero-text-container > h1 {
+
+  .hero-text-container>h1 {
     font-size: 4rem;
     font-weight: 700;
   }
-  
-  .hero-text-container > h1:nth-child(2) > span > h6 {
+
+  .hero-text-container>h1:nth-child(2)>span>h6 {
     bottom: -2rem;
   }
 
   .good-design-text-container {
-    order:1;
+    order: 1;
     align-self: flex-start;
     margin-bottom: 1rem;
   }
@@ -181,11 +181,11 @@ main {
     position: absolute;
     bottom: -14rem;
   }
-  
+
 }
 
-@media screen and (max-width: 376px){
-  .hero-text-container > h1 {
+@media screen and (max-width: 376px) {
+  .hero-text-container>h1 {
     font-size: 3.2rem;
     font-weight: 700;
   }

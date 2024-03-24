@@ -27,12 +27,11 @@ a {
 }
 
 @media screen and (max-width: 426px) {
-    html {
-      font-size: 14px;
-    }
+  html {
+    font-size: 14px;
+  }
 
-    .nav-btn-container {
-      right: 2rem;
-    }
+  .nav-btn-container {
+    right: 2rem;
+  }
 }
-
