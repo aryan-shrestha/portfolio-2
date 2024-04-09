@@ -29,10 +29,10 @@
     line-height: 3rem;
     color: #ffffffe8;
   }
+
   .services-cards {
     width: 100%;
     position: relative;
-  
   }
   
   .services-card {
@@ -85,3 +85,91 @@
     font-weight: 600;
   }
   
+
+@media screen and (max-width: 1024px){
+
+  .service-header {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  .service-header > h1 {
+    font-size: 4rem;
+  }
+
+  .service-header > p {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .services-card-header > h1 {
+    font-size: 2rem;
+  }
+  
+  
+  .services-card-header > p {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+  
+  .services-card-body > ul {
+    list-style-type: none;
+    color: #ffffffbb;
+  }
+  
+  .services-card-body > ul > li {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .services-section {
+    margin-top: 12vh;
+    padding: 0.5rem 2rem;
+   }
+
+  .service-header {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  
+  .service-header > h1 {
+    font-size: 3rem;
+  }
+
+  .service-header > p {
+    font-size: 0.8rem;
+    line-height: 1.8rem;
+  }
+
+  .services-card-header > h1 {
+    font-size: 1.5rem;
+  }
+  
+  .services-card-header > p {
+    font-size: 0.8rem;
+    line-height: 1.8rem;
+  }
+  
+  .services-card-body > ul > li {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .services-section{
+    padding: 0.5rem 1rem;
+  }
+  .service-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .services-card-body {
+    display: none;
+  }
+}

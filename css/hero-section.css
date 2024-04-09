@@ -108,8 +108,6 @@
   margin-right: 0.4rem;
 }
 
-
-
 @media screen and (max-width: 1024px) {
   .hero-section-container {
     flex-direction: column;
@@ -139,10 +137,11 @@
 
 @media screen and (max-width: 426px) {
   main {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0rem;
   }
 
   .hero-section {
+    padding: 0.5rem 1rem;
     margin-top: -10vh;
   }
 
